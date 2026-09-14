@@ -214,7 +214,7 @@ const OPEN_PROJECTS = [
     title: "AI-enabled Human-Robot Teaming with Heterogeneous Multi-Robot Systems",
     area: "Agricultural, Veterinary and Food Sciences, Environmental Sciences, Information and Computing Sciences",
     theme: "Food, Agriculture and Wine",
-    supervisorTitle: "Associate Professor Ivan Lee",
+    supervisorTitle: "Professor Ivan Lee",
     description:
       "This project aims to design an interface that leverages machine learning, augmented reality (AR), and haptic feedback technologies to enable more natural and responsive control of robotic systems, advancing collaborative robotics with intuitive interfaces for directing robotic swarms. The student will join a research group equipped with quadcopters, collaborative robots, mobile platforms, and underwater remotely operated vehicles (ROVs). Students are welcome to propose alternative research topics aligned with the lab's broader goals.",
     note: null,
@@ -224,7 +224,7 @@ const OPEN_PROJECTS = [
     title: "Physics-informed neural networks (PINNs) to model and characterise transparent wood",
     area: "Physical Sciences, Chemical Sciences, Information and Computing Sciences",
     theme: "Sustainable Green Transition",
-    supervisorTitle: "Associate Professor Ivan Lee",
+    supervisorTitle: "Professor Ivan Lee",
     description:
       "This project applies Physics-Informed Neural Networks to model the 3D structure of wood from CT scans, simulate the delignification and infiltration process, and characterize the optical properties of transparent wood. This interdisciplinary project can be divided into multiple sub-topics within AI/computer science, physics, or chemistry. Potential research areas include, but are not limited to, battery materials, concrete science, and wood composites.",
     note: null,
@@ -234,7 +234,7 @@ const OPEN_PROJECTS = [
     title: "Efficient AI Agent Architectures for Medical Image Analysis",
     area: "Biomedical and Clinical Sciences, Information and Computing Sciences",
     theme: "Personal and Societal Health",
-    supervisorTitle: "Associate Professor Ivan Lee",
+    supervisorTitle: "Professor Ivan Lee",
     description:
       "AI agents are autonomous systems capable of perceiving their environment, making decisions, and taking actions to achieve specific goals. This research focuses on developing scalable AI agent architectures designed to operate effectively in resource-constrained healthcare settings. Potential research areas include, but are not limited to, image/video generation, multi-object tracking, computational imaging, and robotics vision.",
     note: null,
