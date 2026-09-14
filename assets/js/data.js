@@ -26,7 +26,7 @@ const SITE = {
   metrics: {
     hIndex: 42,
     i10Index: 107,
-    citations: "7,065",
+    citations: "7,000+",
     publications: "200+", // TODO: 未独立核实
   },
   lastVerified: "September 2026",
@@ -128,8 +128,6 @@ const RESEARCH_THEMES = [
 const PUBLICATIONS = [
   { year: 2026, title: "Multi-modal multi-objective firefly algorithm with multi-stage niches and route planning application", authors: ["Li Lv", "Wen-Lai Xing", "Jeng-Shyang Pan", "Hui Wang", "Run-Xiu Wu", "Ivan Lee"], venue: "Expert Systems with Applications", volume: "296", pages: "art. 129264", doi: "10.1016/j.eswa.2025.129264", theme: "data" },
   { year: 2026, title: "RMTrans: Robust Multimodal Transformers for Patient Prognosis under Backdoor Threats", authors: ["Tao Tang", "Guoqing Han", "Renqiang Luo", "Feng Ding", "Shuo Yu", "Ivan Lee"], venue: "ACM Transactions on Intelligent Systems and Technology", volume: "17", issue: "3", pages: "1–25", doi: "10.1145/3749989", theme: "hyperspectral" },
-  { year: 2026, title: "Squeeze-Excitation Attention-Guided 3D Inception ResNet for Aflatoxin B1 Classification in Almonds Using Hyperspectral Imaging", authors: ["Md Ahasan Kabir", "Ivan Lee", "Sang-Heon Lee"], venue: "Toxins", volume: "18", issue: "2", pages: "art. 76", doi: "10.3390/toxins18020076", theme: "hyperspectral" },
-  { year: 2025, title: "Deep Learning-Based Detection of Aflatoxin B1 Contamination in Almonds Using Hyperspectral Imaging", authors: ["Md Ahasan Kabir", "Ivan Lee", "Sang-Heon Lee"], venue: "Toxins", volume: "17", issue: "4", pages: "art. 156", doi: "10.3390/toxins17040156", theme: "hyperspectral" },
   { year: 2025, title: "Correlation Awareness Evolutionary Sparse Hybrid Spectral Band Selection Algorithm to Detect Aflatoxin B1 Contaminated Almonds Using Hyperspectral Images", authors: ["Md Ahasan Kabir", "Ivan Lee", "Chandra B. Singh", "Gayatri Mishra", "Brajesh Kumar Panda", "Sang-Heon Lee"], venue: "Food Chemistry", volume: "476", pages: "art. 143381", doi: "10.1016/j.foodchem.2025.143381", theme: "hyperspectral" },
   { year: 2025, title: "Detection of Mycotoxins in Cereal Grains and Nuts Using Machine Learning Integrated Hyperspectral Imaging: A Review", authors: ["Md Ahasan Kabir", "Ivan Lee", "Chandra B. Singh", "Gayatri Mishra", "Brajesh Kumar Panda", "Sang-Heon Lee"], venue: "Toxins", volume: "17", issue: "5", pages: "art. 219", doi: "10.3390/toxins17050219", theme: "hyperspectral" },
   { year: 2024, title: "Heterogeneous Network Motif Coding, Counting, and Profiling", authors: ["Shuo Yu", "Feng Xia", "Honglong Chen", "Ivan Lee", "Lianhua Chi", "Hanghang Tong"], venue: "ACM Transactions on Knowledge Discovery from Data", volume: "18", issue: "9", pages: "1–21", doi: "10.1145/3687465", theme: "data" },
@@ -140,7 +138,6 @@ const PUBLICATIONS = [
   { year: 2022, title: "On-Device Saliency Prediction Based on Pseudoknowledge Distillation", authors: ["Ayaz Umer", "Chakkrit Termritthikun", "Tie Qiu", "Philip H. W. Leong", "Ivan Lee"], venue: "IEEE Transactions on Industrial Informatics", volume: "18", issue: "9", pages: "6317–6325", doi: "10.1109/TII.2022.3153365", theme: "vision" },
   { year: 2021, title: "The Quest for Better Clinical Word Vectors: Ontology Based and Lexical Vector Augmentation Versus Clinical Contextual Embeddings", authors: ["Namrata Nath", "Sang-Heon Lee", "Mark D. McDonnell", "Ivan Lee"], venue: "Computers in Biology and Medicine", volume: "134", pages: "art. 104433", doi: "10.1016/j.compbiomed.2021.104433", theme: "hyperspectral" },
   { year: 2019, title: "A Path Beyond Metal and Silicon: Polymer/Nanomaterial Composites for Stretchable Strain Sensors", authors: ["Aidong Qiu", "Peilin Li", "Zhaokun Yang", "Yu Yao", "Ivan Lee", "Jun Ma"], venue: "Advanced Functional Materials", volume: "29", issue: "17", pages: "art. 1806306", doi: "10.1002/adfm.201806306", theme: "sensing" },
-  { year: 2019, title: "Scientific Paper Recommendation: A Survey", authors: ["Xiaomei Bai", "Mengyang Wang", "Ivan Lee", "Zhuo Yang", "Xiangjie Kong", "Feng Xia"], venue: "IEEE Access", volume: "7", pages: "9324–9339", doi: "10.1109/ACCESS.2018.2890388", theme: "data" },
 ];
 
 // 以下均为官方 profile 页面 (https://researchers.adelaide.edu.au/profile/ivan.lee, 2026-09 抓取) 列出的
