@@ -1,0 +1,126 @@
+/*
+ * 极简学术风格,参考 rp-main 模板(sidebar 导航 + Georgia/Times 衬线字体)与
+ * czh513.github.io 的朴素排版。全站只用一个强调色(蓝),黑/白/灰为中性色,不计入配色数。
+ * 不用卡片阴影、圆角徽章、渐变——纯文本层级 + 边框分隔。
+ */
+:root {
+  --ink: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #2a4d8f;
+  --link: #12429e;
+  --border: #d9d9d9;
+  --bg-sidebar: #f6f6f6;
+  --bg-page: #ececeb;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg-page); }
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  color: var(--ink);
+  background: var(--bg-page);
+  line-height: 1.5;
+  font-size: 17px;
+}
+a { color: var(--link); text-decoration: underline; text-decoration-color: rgba(18,66,158,0.4); font-weight: 600; }
+a:hover { text-decoration-color: var(--link); }
+h1, h2, h3, h4, h5, h6 { color: var(--accent); font-weight: bold; line-height: 1.25; }
+h1 { font-size: 1.7rem; margin: 0 0 0.6rem; }
+h2 { font-size: 1.3rem; margin: 1.6rem 0 0.6rem; padding-bottom: 0.2rem; border-bottom: 1px solid var(--border); }
+h3 { font-size: 1.1rem; margin: 1.2rem 0 0.4rem; }
+h4 { font-size: 1rem; margin: 1rem 0 0.3rem; }
+p { margin: 0 0 0.8rem; }
+ul, ol { margin: 0 0 0.8rem; padding-left: 1.3rem; }
+li { margin-bottom: 0.25rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+.muted { color: var(--muted); }
+.small { font-size: 0.9rem; }
+
+/* ===== Page shell: white "sheet" framed by a gray page background ===== */
+.page { max-width: 1300px; margin: 0 auto; background: #fff; border-left: 1px solid var(--border); border-right: 1px solid var(--border); min-height: 100vh; }
+
+.masthead {
+  padding: 1.1rem 2rem 0.85rem;
+  border-bottom: 2px solid var(--ink);
+}
+.masthead h1 { color: var(--ink); margin: 0; font-size: 1.6rem; }
+.masthead .role { color: var(--muted); font-size: 0.95rem; margin-top: 0.15rem; }
+
+.layout { display: flex; align-items: flex-start; }
+.sidebar {
+  width: 200px; flex-shrink: 0; padding: 1.5rem 1rem 2rem 2rem;
+  border-right: 1px solid var(--border);
+}
+.sidebar a {
+  display: block; padding: 0.3rem 0; color: var(--ink); text-decoration: none; font-weight: normal;
+}
+.sidebar a:hover { color: var(--link); }
+.sidebar a.active { color: var(--link); font-weight: bold; }
+.content { flex: 1; min-width: 0; padding: 1.5rem 2.5rem 3rem; }
+.content > :not(.intro):not(#theme-grid):not(#research-detail):not(.sponsors-grid) { max-width: 760px; }
+.intro, #theme-grid, #research-detail { max-width: 900px; }
+.sponsors-grid { max-width: 1000px; }
+
+@media (max-width: 700px) {
+  .layout { flex-direction: column; }
+  .sidebar {
+    width: 100%; border-right: none; border-bottom: 1px solid var(--border);
+    padding: 0.75rem 1.5rem; display: flex; flex-wrap: wrap; gap: 0 1.2rem;
+  }
+  .sidebar a { padding: 0.3rem 0; }
+  .content { padding: 1.25rem 1.5rem 2.5rem; }
+}
+
+/* ===== Home ===== */
+.intro { display: flex; gap: 1.75rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: 1rem; }
+.avatar-box {
+  width: 130px; height: 160px; flex-shrink: 0; background: var(--bg-sidebar);
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 0.85rem; text-align: center;
+}
+.avatar-photo { width: 130px; height: 160px; object-fit: cover; display: block; border: 1px solid var(--border); }
+.intro-text { flex: 1; min-width: 280px; }
+.metrics-line { color: var(--muted); font-size: 0.95rem; margin: 0.75rem 0 0; }
+.metrics-line strong { color: var(--ink); }
+
+.sponsors-grid { display: flex; flex-direction: column; gap: 1.5rem; margin: 1rem 0 0.8rem; }
+.sponsor-figure { margin: 0; }
+.sponsor-figure img { max-width: 100%; height: auto; border: 1px solid var(--border); display: block; }
+.sponsor-figure figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.35rem; }
+
+/* ===== Research page ===== */
+.subarea-list { margin-top: 0.2rem; }
+.pub-mini-list { list-style: none; padding-left: 0; margin-top: 0.4rem; }
+.pub-mini-list li { padding: 0.2rem 0; }
+
+/* ===== Publications: full citation, definition-list-like ===== */
+.pub-year-heading { margin-top: 1.6rem; }
+.pub-list { list-style: none; padding-left: 0; margin: 0.5rem 0 0; }
+.pub-entry { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+.pub-entry .pub-title { font-weight: bold; }
+.pub-entry .pub-authors { display: block; }
+.pub-entry .pub-cite { color: var(--muted); font-style: italic; }
+.pub-entry .pub-cat { color: var(--muted); font-size: 0.85rem; }
+
+/* ===== Team ===== */
+.pi-block { display: flex; gap: 1.75rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.pi-text { flex: 1 1 320px; min-width: 0; }
+.link-row a { margin-right: 1rem; }
+.member-entry { margin-bottom: 0.6rem; }
+.project-list { list-style: none; padding-left: 0; }
+.project-list li { padding: 0.2rem 0; }
+.project-list li::before { content: "— "; }
+
+/* ===== Opportunities ===== */
+.project-card { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.project-card h3 { margin-top: 0.2rem; }
+.note-line { color: var(--muted); font-size: 0.9rem; }
+.apply-link { font-weight: bold; }
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid var(--border); margin-top: 2rem; padding: 1.25rem 1.5rem;
+  color: var(--muted); font-size: 0.85rem; text-align: center;
+}
+.site-footer a { color: var(--muted); }
