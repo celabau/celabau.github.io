@@ -24,12 +24,12 @@ const SITE = {
   // h_index / i10_index / citations 已亲自二次核对 Google Scholar (2026-09),可信
   // publications 总数未能独立核实,只是调研估计值,上线前务必自己核对准确数字
   metrics: {
-    hIndex: 42,
-    i10Index: 107,
-    citations: "7,000+",
+    hIndex: 41,
+    i10Index: 108,
+    citations: "6,000+",
     publications: "200+", // TODO: 未独立核实
   },
-  lastVerified: "September 2026",
+  lastVerified: "October 2026",
 };
 
 // Biography 段落(散文体,取代原先结构化的 Education/Career 表格)。
