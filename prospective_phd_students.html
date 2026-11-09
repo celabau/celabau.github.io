@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Information for prospective PhD students and CSC applicants interested in joining the research team.">
+  <title>Prospective PhD Students</title>
+  <style>
+    :root {
+      --primary: #003b5c;
+      --accent: #b58a35;
+      --text: #263238;
+      --muted: #5f6b72;
+      --border: #dce3e8;
+      --surface: #f5f8fa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #fff;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    main {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 28px;
+      color: var(--primary);
+      font-size: clamp(1.8rem, 4vw, 2.35rem);
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--primary);
+      font-size: 1.35rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin: 26px 0 12px;
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    p { margin: 0 0 16px; }
+
+    .section {
+      margin-top: 28px;
+      padding: 24px 26px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .general {
+      background: var(--surface);
+      border-top: 4px solid var(--primary);
+    }
+
+    .csc {
+      border-top: 4px solid var(--accent);
+    }
+
+    .notice {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: var(--surface);
+    }
+
+    .notice p:last-child { margin-bottom: 0; }
+
+    .scholarship {
+      margin-top: 18px;
+      padding: 20px 22px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .scholarship ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    .scholarship li { margin: 0 0 10px; }
+
+    a {
+      color: #075985;
+      overflow-wrap: anywhere;
+    }
+
+    .closing-note {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 26px 16px; }
+      .section { padding: 18px; }
+      .notice, .scholarship { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Message to Prospective PhD Students</h1>
+
+    <section class="section general" aria-labelledby="general-heading">
+      <h2 id="general-heading">1. General Information for Prospective PhD Students</h2>
+      <p>Thank you for your interest in pursuing a PhD with me. Please be aware that international PhD scholarships are highly competitive. Students accepted in my lab are mostly either have an outstanding publication record (first/second author of IEEE/ACM Transactions or journals with IF &gt; 5), or are graduated from the world's top 200 universities with a good GPA 80% or above.</p>
+    </section>
+
+    <section class="section csc" aria-labelledby="csc-heading">
+      <h2 id="csc-heading">2. Information for CSC Applicants from China</h2>
+      <p>For CSC applicants from China, please contact me only if joining my team is your top priority. I consider applicants from top 100 Chinese universities. Please find the following message from Adelaide University's top-up scholarship offer:</p>
+
+      <div class="notice" aria-label="CSC application information">
+        <p>The China Scholarship Council (CSC) – Adelaide University Partnership Scholarship Program are now open until <strong>1 February 2027</strong> for candidates intending to commence their PhD from July 2027. Partnership information and application instructions, including the Adelaide University nomination process, are available on the Research Scholarships webpage.</p>
+        <p><a href="https://adelaide.edu.au/research/research-degrees/research-scholarships/" target="_blank" rel="noopener noreferrer">Adelaide University Research Scholarships</a></p>
+        <p>Kindly be aware that an application to Adelaide University and any subsequent nomination to the CSC does not guarantee success.</p>
+      </div>
+
+      <div class="scholarship">
+        <h3>2027 Adelaide University Supplementary Scholarship (CSC) for Successful Applicants</h3>
+        <ul>
+          <li>CSC provides a stipend of about <strong>$22,800 p.a.</strong> for up to four years.</li>
+          <li>Adelaide University will provide a DVCRI-funded supplementary scholarship of <strong>$15,000 p.a.</strong> (indexed annually) for 3.5 years.</li>
+          <li>This brings the total stipend to the 2027 RTPS/AURS rate of <strong>$37,800 p.a.</strong></li>
+          <li>No separate application is required from the student, supervisor, School, or College for the supplementary scholarship.</li>
+        </ul>
+      </div>
+
+      <p class="closing-note">Please note, this arrangement is only valid for this CSC scholarship round and only for applicants nominated by the AUGRS to the CSC who commence in 2027.</p>
+    </section>
+  </main>
+</body>
+</html>
